@@ -7,11 +7,17 @@ using namespace std;
 
 class Node {
  public:
+  //constructor, sets Student to NULL and next to NULL
   Node();
+  //destructor sets  student and next to null
   ~Node();
+  //sets the student on the Node
   void setStudent(Student* newS);
+  //returns the student
   Student* getStudent();
+  //sets the next Node
   void setNext(Node* newN);
+  //returns the next Node
   Node* getNext();
  private:
   Student* student;
