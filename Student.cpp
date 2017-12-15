@@ -4,6 +4,7 @@
 
 using namespace std;
 
+//set student variables
 Student::Student(char* fN, char* lN, int Identify, double GP) {
   firstName = fN;
   lastName = lN;
@@ -11,11 +12,13 @@ Student::Student(char* fN, char* lN, int Identify, double GP) {
   GPA = GP;
 }
 
+//delete name pointers
 Student::~Student() {
   delete firstName;
   delete lastName;
 }
 
+//combine the first and second names with a space in between, then return the full name
 char* Student::getName() {
   char* fullName = new char[80];
   strcpy(fullName, firstName);
@@ -29,6 +32,7 @@ char* Student::getName() {
   return fullName;
 }
 
+//getters for ID and GPA
 int Student::getID() {
   return ID;
   

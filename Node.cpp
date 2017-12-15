@@ -4,15 +4,18 @@
 
 using namespace std;
 
+//creates empty node
 Node::Node() {
   student = NULL;
   next = NULL;
 }
 
+//empties node variables
 Node::~Node() {
   student = NULL;
   next = NULL;
 }
+//setters and getters
 void Node::setStudent(Student* newS) {
   student = newS;
 }
