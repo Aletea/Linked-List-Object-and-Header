@@ -119,6 +119,10 @@ void printNode(Node* start) {
 }
 
 void deleteStudent(char studentName[], Node* &start, Node* current) {
+  if (start == NULL) {
+    cout << "no students" << endl;
+    return;
+  }
   //if the first node is this one, delete the first node and reset the new first node
   if (current == start && strcmp(current->getStudent()->getName(), studentName) == 0) {
     start = current->getNext();

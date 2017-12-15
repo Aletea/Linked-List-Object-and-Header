@@ -9,7 +9,7 @@ class Node {
  public:
   //constructor, sets Student to NULL and next to NULL
   Node();
-  //destructor sets  student and next to null
+  //destructor deletes student and sets next to null
   ~Node();
   //sets the student on the Node
   void setStudent(Student* newS);

@@ -10,9 +10,9 @@ Node::Node() {
   next = NULL;
 }
 
-//empties node variables
+//empties node variables and delete student
 Node::~Node() {
-  student = NULL;
+  delete student;
   next = NULL;
 }
 //setters and getters
